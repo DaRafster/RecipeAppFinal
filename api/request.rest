@@ -1,0 +1,40 @@
+GET http://localhost:3001/recipes
+
+###
+
+POST http://localhost:3001/recipes/new
+Content-Type: application/json
+
+{
+  "favorite": true,
+  "name": "Grilled cheese sandwich",
+  "description": "Grilled cheese sandwich which is made with cheese and bread",
+    "ingredients": [
+        "bread",
+        "cheese"
+    ]
+}
+
+###
+
+DELETE http://localhost:3001/recipes/delete/6430855e25d557214b7e10e6
+
+###
+
+PUT http://localhost:3001/recipes/update/642f51c3d81e4dbedbafab38
+Content-Type: application/json
+
+{
+  "name": "Pizza",
+  "description": "Pizza with tomato sauce",
+    "ingredients": [
+        "pizza",
+        "tomato sauce",
+        "dough",
+        "cheese"
+    ]
+}
+
+###
+
+GET http://localhost:3001/recipes/search/Italian
