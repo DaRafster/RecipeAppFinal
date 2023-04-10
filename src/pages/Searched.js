@@ -41,9 +41,15 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
+  padding: 3rem;
 `;
 
 const Card = styled.div`
+  border: 5px solid black;
+  border-radius: 2rem;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+
   img {
     width: 100%;
     border-radius: 2rem;
@@ -56,11 +62,14 @@ const Card = styled.div`
   h4 {
     text-align: center;
     padding: 1rem;
-    font-family: "Kaleko205RoundW01-Bold", Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 30px;
     color: black;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
 
