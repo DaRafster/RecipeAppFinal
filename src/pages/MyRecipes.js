@@ -5,7 +5,7 @@ import RecipeCard from "../components/RecipeCard";
 import RecipePopup from "../components/RecipePopup";
 import APISearch from "../components/APISearch";
 
-const API_BASE = "http://localhost:3001";
+const API_BASE = "https://custom-recipe-app.onrender.com";
 
 function AddRecipeButton(props) {
   return (
